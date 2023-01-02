@@ -719,6 +719,9 @@
     "/chinaventure/news/:id?": [
         "yuxinliu-alex"
     ],
+    "/chsi/kydt": [
+        "SunBK201"
+    ],
     "/ciidbnu/:id?": [
         "nczitzk"
     ],
@@ -742,6 +745,21 @@
     ],
     "/cnbeta/topics/:id": [
         "nczitzk"
+    ],
+    "/cnblogs/aggsite/topdiggs": [
+        "hujingnb"
+    ],
+    "/cnblogs/aggsite/topviews": [
+        "hujingnb"
+    ],
+    "/cnblogs/aggsite/headline": [
+        "hujingnb"
+    ],
+    "/cnblogs/cate/:type": [
+        "hujingnb"
+    ],
+    "/cnblogs/pick": [
+        "hujingnb"
     ],
     "/cncf/:cate?": [
         "Fatpandac"
@@ -776,6 +794,9 @@
     ],
     "/codeforces/contests": [
         "Fatpandac"
+    ],
+    "/codeforces/recent-actions": [
+        "ftiasch"
     ],
     "/comicskingdom/:name": [
         "stjohnjohnson"
@@ -2589,6 +2610,9 @@
     "/luogu/user/feed/:uid": [
         "solstice23"
     ],
+    "/luogu/user/blog/:username": [
+        "ftiasch"
+    ],
     "/lvv2/news/:channel/:sort?": [
         "Fatpandac"
     ],
@@ -3346,6 +3370,9 @@
     "/qipamaijia/:cate?": [
         "Fatpandac",
         "nczitzk"
+    ],
+    "/qlu/notice": [
+        "SunBK201"
     ],
     "/qm120/news/:category?": [
         "nczitzk"
@@ -4492,6 +4519,9 @@
     ],
     "/xwlb/index": [
         "xfangbao"
+    ],
+    "/xys/new": [
+        "wenzhenl"
     ],
     "/xyzrank/": [
         "nczitzk"
