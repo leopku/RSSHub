@@ -9452,7 +9452,14 @@ media-typer@0.3.0:
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
   integrity sha512-dq+qelQ9akHpcOl/gUVRTxVIOkAJ1wR3QAvb4RsVjS8oVoFjDGTc679wJYmUmknUF5HwMLOgb5O+a3KxfWapPQ==
 
-meilisearch@0.30.0, meilisearch@^0.30.0:
+meilisearch@0.32.2:
+  version "0.32.2"
+  resolved "https://registry.yarnpkg.com/meilisearch/-/meilisearch-0.32.2.tgz#b771d26fe942d6a23523c54ea171e57e0ce5355e"
+  integrity sha512-Ajc7tahu7fZdSoBfXwIwtF6ZfFhFdpM/5eRTjw3v59sQmE6NWq5I5TxIdpS0FAiJaD3KtD9sOWAQRepdk8QJwA==
+  dependencies:
+    cross-fetch "^3.1.5"
+
+meilisearch@^0.30.0:
   version "0.30.0"
   resolved "https://registry.yarnpkg.com/meilisearch/-/meilisearch-0.30.0.tgz#707f9a6b07440c496b965379616e084f112160ae"
   integrity sha512-3y1hALOwTDpquYar+gDREqRasFPWKxkWAhk6h+RF+nKObPVf9N77wcTNvukGwOKbxRyJnKge0OPgAB1BkB9VVw==
