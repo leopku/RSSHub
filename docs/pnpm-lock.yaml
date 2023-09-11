@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@vuepress/plugin-back-to-top':
     specifier: 1.9.9
@@ -17,8 +21,8 @@ dependencies:
     specifier: 13.0.1
     version: 13.0.1
   pinyin-pro:
-    specifier: 3.14.0
-    version: 3.14.0
+    specifier: 3.16.6
+    version: 3.16.6
   remark:
     specifier: 13.0.0
     version: 13.0.0
@@ -2594,6 +2598,7 @@ packages:
   /binary-extensions@2.2.0:
     resolution: {integrity: sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==}
     engines: {node: '>=8'}
+    requiresBuild: true
     dev: false
     optional: true
 
@@ -4955,6 +4960,7 @@ packages:
   /glob-parent@5.1.2:
     resolution: {integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==}
     engines: {node: '>= 6'}
+    requiresBuild: true
     dependencies:
       is-glob: 4.0.3
     dev: false
@@ -5590,6 +5596,7 @@ packages:
   /is-binary-path@2.1.0:
     resolution: {integrity: sha512-ZMERYes6pDydyuGidse7OsHxtbI7WVeUEozgR/g7rd0xUimYNlvZRE/K2MgZTjWy725IfelLeVcEM97mmtRGXw==}
     engines: {node: '>=8'}
+    requiresBuild: true
     dependencies:
       binary-extensions: 2.2.0
     dev: false
@@ -7219,8 +7226,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
-  /pinyin-pro@3.14.0:
-    resolution: {integrity: sha512-mbFw2Gx8IlbnxClhaACRFUWXa/lCzCttrPIdHXPzAvWOAmTKcdTFlMjbt5Quq6YY2asgD79Ml/MQpPEGN3o8iw==}
+  /pinyin-pro@3.16.6:
+    resolution: {integrity: sha512-l4W4c/K49kj33P5JwpAHkkN/rlxeOwQ07bLhMg8kJVIsdxD3Cpa3aIBF1PKUPt3rxbebawmBoeR1x8VgZmFO5w==}
     dev: false
 
   /pkg-dir@3.0.0:
@@ -7836,6 +7843,7 @@ packages:
   /readdirp@3.6.0:
     resolution: {integrity: sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA==}
     engines: {node: '>=8.10.0'}
+    requiresBuild: true
     dependencies:
       picomatch: 2.3.1
     dev: false
