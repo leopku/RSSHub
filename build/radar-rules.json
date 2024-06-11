@@ -555,7 +555,7 @@
       }
     ]
   },
-  "69shu.top": {
+  "69shuba.pro": {
     "_name": "69书吧",
     "www": [
       {
@@ -772,6 +772,19 @@
           "/"
         ],
         "target": "/abskoop/nsfw"
+      }
+    ]
+  },
+  "academia.edu": {
+    "_name": "Academia",
+    ".": [
+      {
+        "title": "interest",
+        "docs": "https://docs.rsshub.app/routes/journal",
+        "source": [
+          "/Documents/in/:interest"
+        ],
+        "target": "/academia/topic/:interest"
       }
     ]
   },
@@ -1680,6 +1693,83 @@
       }
     ]
   },
+  "beijingprice.cn": {
+    "_name": "北京价格",
+    ".": [
+      {
+        "title": "资讯",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/:category"
+        ],
+        "target": "/beijingpriceparams=>{const category=params.category;return`/beijingprice${category?`/${category}`:\"\"}`}"
+      },
+      {
+        "title": "价格资讯 - 新闻资讯",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/jgzx/xwzx/"
+        ],
+        "target": "/beijingprice/jgzx/xwzx"
+      },
+      {
+        "title": "价格资讯 - 工作动态",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/jgzx/gzdt/"
+        ],
+        "target": "/beijingprice/jgzx/gzdt"
+      },
+      {
+        "title": "价格资讯 - 各区动态",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/jgzx/gqdt/"
+        ],
+        "target": "/beijingprice/jgzx/gqdt"
+      },
+      {
+        "title": "价格资讯 - 通知公告",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/jgzx/tzgg/"
+        ],
+        "target": "/beijingprice/jgzx/tzgg"
+      },
+      {
+        "title": "价格资讯 - 价格早报",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/jgzx/jgzb/"
+        ],
+        "target": "/beijingprice/jgzx/jgzb"
+      },
+      {
+        "title": "综合信息 - 价格听证",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/zhxx/jgtz/"
+        ],
+        "target": "/beijingprice/zhxx/jgtz"
+      },
+      {
+        "title": "综合信息 - 价格监测定点单位名单",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/zhxx/jgjcdddwmd/"
+        ],
+        "target": "/beijingprice/zhxx/jgjcdddwmd"
+      },
+      {
+        "title": "综合信息 - 部门预算决算",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/bmys/"
+        ],
+        "target": "/beijingprice/bmys"
+      }
+    ]
+  },
   "bellroy.com": {
     "_name": "Bellroy",
     ".": [
@@ -1863,15 +1953,18 @@
   },
   "bing.com": {
     "_name": "Bing",
-    "cn": [
+    "www": [
       {
         "title": "每日壁纸",
         "docs": "https://docs.rsshub.app/routes/other",
         "source": [
+          "/",
           "/"
         ],
-        "target": "/bing/"
-      },
+        "target": "/bing/:routeParams?"
+      }
+    ],
+    "cn": [
       {
         "title": "搜索",
         "docs": "https://docs.rsshub.app/routes/other",
@@ -2959,6 +3052,20 @@
           "/"
         ],
         "target": "/cfachina/servicesupport/analygarden/:program?"
+      }
+    ]
+  },
+  "cfr.org": {
+    "_name": "Council on Foreign Relations",
+    "www": [
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/:category",
+          "/:category/:subCategory"
+        ],
+        "target": "/cfr/:category/:subCategory?"
       }
     ]
   },
@@ -4077,6 +4184,19 @@
       }
     ]
   },
+  "dataguidance.com": {
+    "_name": "DataGuidance",
+    ".": [
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/search/news"
+        ],
+        "target": "/dataguidance/news"
+      }
+    ]
+  },
   "dayanzai.me": {
     "_name": "大眼仔旭",
     ".": [
@@ -5106,6 +5226,32 @@
           "/en/packages/:app/"
         ],
         "target": "/f-droid/apprelease/:app"
+      }
+    ]
+  },
+  "famitsu.com": {
+    "_name": "ファミ通",
+    "www": [
+      {
+        "title": "Category",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/category/:category/page/1"
+        ],
+        "target": "/famitsu/category/:category?"
+      }
+    ]
+  },
+  "fanqienovel.com": {
+    "_name": "番茄小说",
+    ".": [
+      {
+        "title": "小说更新",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/page/:bookId"
+        ],
+        "target": "/fanqienovel/page/:bookId"
       }
     ]
   },
@@ -6142,7 +6288,7 @@
     ]
   },
   "ah.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     "kjt": [
       {
         "title": "安徽省科学技术厅",
@@ -6283,7 +6429,7 @@
     ]
   },
   "bjedu.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     "gh": [
       {
         "title": "通用",
@@ -6297,7 +6443,7 @@
     ]
   },
   "beijing.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     "jw": [
       {
         "title": "通知公告",
@@ -6310,7 +6456,7 @@
     ]
   },
   "caac.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     ".": [
       {
         "title": "公众留言",
@@ -6323,7 +6469,7 @@
     ]
   },
   "chinatax.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     "www": [
       {
         "title": "最新文件",
@@ -6336,7 +6482,7 @@
     ]
   },
   "cq.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     "rlsbj": [
       {
         "title": "重庆市人民政府 人力社保局 - 人事考试通知",
@@ -6357,7 +6503,7 @@
     ]
   },
   "cmse.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     "www": [
       {
         "title": "飞行任务",
@@ -6370,7 +6516,7 @@
     ]
   },
   "customs.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     "www": [
       {
         "title": "拍卖信息 / 海关法规",
@@ -6383,7 +6529,7 @@
     ]
   },
   "tqyb.com.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     "www": [
       {
         "title": "广东省内城市预警信号",
@@ -6404,7 +6550,7 @@
     ]
   },
   "changsha.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     "wlwz": [
       {
         "title": "长沙市人民政府",
@@ -6417,7 +6563,7 @@
     ]
   },
   "jiangsu.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     "wlt": [
       {
         "title": "江苏文旅局审批公告",
@@ -6430,7 +6576,7 @@
     ]
   },
   "jinan.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     "jnmhc": [
       {
         "title": "获取国家医师资格考试通知",
@@ -6443,7 +6589,7 @@
     ]
   },
   "mee.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     "www": [
       {
         "title": "要闻动态",
@@ -6456,7 +6602,7 @@
     ]
   },
   "mem.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     "www": [
       {
         "title": "事故及灾害查处",
@@ -6469,7 +6615,7 @@
     ]
   },
   "miit.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     ".": [
       {
         "title": "文件发布",
@@ -6490,7 +6636,7 @@
     ]
   },
   "moa.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     ".": [
       {
         "title": "中华人民共和国农业农村部 - 新闻",
@@ -6503,7 +6649,7 @@
     ]
   },
   "moe.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     ".": [
       {
         "title": "司局通知",
@@ -6517,7 +6663,7 @@
     ]
   },
   "moj.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     "www": [
       {
         "title": "立法意见征集",
@@ -6531,7 +6677,7 @@
     ]
   },
   "nea.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     ".": [
       {
         "title": "发展规划司",
@@ -6544,7 +6690,7 @@
     ]
   },
   "npc.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     ".": [
       {
         "title": "通用",
@@ -6557,7 +6703,7 @@
     ]
   },
   "pbc.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     ".": [
       {
         "title": "沟通交流",
@@ -6586,7 +6732,7 @@
     ]
   },
   "samr.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     "xgzlyhd": [
       {
         "title": "留言咨询",
@@ -6599,8 +6745,66 @@
     ]
   },
   "sh.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
+    "fgw": [
+      {
+        "title": "上海市发展和改革委员会",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/:category"
+        ],
+        "target": "/govparams=>{const category=params.category.replace(/\\/index\\.html/,\"\");return`/gov/sh/fgw${category?`/${category}`:\"\"}`}"
+      },
+      {
+        "title": "最新信息公开",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/fgw_zxxxgk/index.html"
+        ],
+        "target": "/gov/sh/fgw/fgw_zxxxgk"
+      },
+      {
+        "title": "要闻动态",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/fgw_fzggdt/index.html"
+        ],
+        "target": "/gov/sh/fgw/fgw_fzggdt"
+      },
+      {
+        "title": "上海市发展和改革委员会",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/:category"
+        ],
+        "target": "/govparams=>{const category=params.category.replace(/\\/index\\.html/,\"\");return`/gov/sh/fgw${category?`/${category}`:\"\"}`}"
+      },
+      {
+        "title": "最新信息公开",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/fgw_zxxxgk/index.html"
+        ],
+        "target": "/gov/sh/fgw/fgw_zxxxgk"
+      },
+      {
+        "title": "要闻动态",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/fgw_fzggdt/index.html"
+        ],
+        "target": "/gov/sh/fgw/fgw_fzggdt"
+      }
+    ],
     "rsj": [
+      {
+        "title": "上海市职业能力考试院 考试项目",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/"
+        ],
+        "target": "/gov/sh/rsj/ksxm"
+      },
       {
         "title": "上海市职业能力考试院 考试项目",
         "docs": "https://docs.rsshub.app/routes/government",
@@ -6617,10 +6821,26 @@
         "source": [
           "/"
         ],
-        "target": "/gov/shanghai/wgj"
+        "target": "/gov/sh/wgj"
+      },
+      {
+        "title": "上海市文旅局审批公告",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/"
+        ],
+        "target": "/gov/sh/wgj"
       }
     ],
     "wsjkw": [
+      {
+        "title": "上海卫健委 疫情通报",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/"
+        ],
+        "target": "/gov/sh/wsjkw/yqtb"
+      },
       {
         "title": "上海卫健委 疫情通报",
         "docs": "https://docs.rsshub.app/routes/government",
@@ -6632,7 +6852,7 @@
     ]
   },
   "sz.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     "xxgk": [
       {
         "title": "深圳市考试院",
@@ -6665,7 +6885,7 @@
     ]
   },
   "mztoday.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     "www": [
       {
         "title": "今日绵竹",
@@ -6678,7 +6898,7 @@
     ]
   },
   "stats.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     "www": [
       {
         "title": "国家统计局 通用",
@@ -6691,7 +6911,7 @@
     ]
   },
   "suzhou.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     "www": [
       {
         "title": "政府信息公开文件",
@@ -6713,7 +6933,7 @@
     ]
   },
   "taiyuan.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     "rsj": [
       {
         "title": "太原市人力资源和社会保障局政府公开信息",
@@ -6726,7 +6946,7 @@
     ]
   },
   "wuhan.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     ".": [
       {
         "title": "武汉要闻",
@@ -6741,7 +6961,7 @@
     ]
   },
   "zjks.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     ".": [
       {
         "title": "通知",
@@ -6756,7 +6976,7 @@
     ]
   },
   "www.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     ".": [
       {
         "title": "信息稿件",
@@ -6795,7 +7015,7 @@
     ]
   },
   "zj.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     "search": [
       {
         "title": "浙江省人民政府-全省政府网站统一搜索",
@@ -8267,6 +8487,19 @@
       }
     ]
   },
+  "imdb.com": {
+    "_name": "IMDb",
+    "www": [
+      {
+        "title": "Charts",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/chart/:chart/"
+        ],
+        "target": "/imdb/chart/:chart?"
+      }
+    ]
+  },
   "imiker.com": {
     "_name": "米课",
     ".": [
@@ -8542,20 +8775,12 @@
         "target": "/javdb/actors/:id/:filter?"
       },
       {
-        "title": "Unknown",
+        "title": "主页",
         "docs": "https://docs.rsshub.app/routes/multimedia",
         "source": [
           "/"
         ],
         "target": "/javdb/home/:category?/:sort?/:filter?"
-      },
-      {
-        "title": "Unknown",
-        "docs": "https://docs.rsshub.app/routes/multimedia",
-        "source": [
-          "/"
-        ],
-        "target": "/javdb/:category?/:sort?/:filter?"
       },
       {
         "title": "Unknown",
@@ -8604,6 +8829,14 @@
           "/"
         ],
         "target": "/javdb/tags/:query?/:category?"
+      },
+      {
+        "title": "番号",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/"
+        ],
+        "target": "/javdb/video_codes/:code/:filter?"
       }
     ]
   },
@@ -8701,6 +8934,19 @@
       }
     ]
   },
+  "jingzhengu.com": {
+    "_name": "精真估",
+    "www": [
+      {
+        "title": "资讯",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/"
+        ],
+        "target": "/jingzhengu/news"
+      }
+    ]
+  },
   "jisilu.cn": {
     "_name": "集思录",
     ".": [
@@ -8713,6 +8959,47 @@
           "/"
         ],
         "target": "/jisilu/:category?/:sort?/:day?"
+      }
+    ]
+  },
+  "jiuyangongshe.com": {
+    "_name": "韭研公社",
+    "www": [
+      {
+        "title": "社群",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/"
+        ],
+        "target": "/jiuyangongshe/community"
+      }
+    ]
+  },
+  "jlu.edu.cn": {
+    "_name": "吉林大学",
+    "jwc": [
+      {
+        "title": "教务通知",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/",
+          "/index.htm"
+        ],
+        "target": "/jlu/jwc"
+      }
+    ],
+    "ccst": [
+      {
+        "title": "吉林大学计算机科学与技术学院 - 新闻中心",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/xwzx/gsl.htm",
+          "/xwzx/xstd.htm",
+          "/xwzx/xytz.htm",
+          "/xwzx/xyxw.htm",
+          "/xwzx/zsjy.htm"
+        ],
+        "target": "/jlu/ccst/xwzx/:category"
       }
     ]
   },
@@ -8827,6 +9114,19 @@
           "/tag/:tag"
         ],
         "target": "/juejin/tag/:tag"
+      }
+    ]
+  },
+  "kadokawa.com.tw": {
+    "_name": "台灣角川",
+    ".": [
+      {
+        "title": "角編新聞台",
+        "docs": "https://docs.rsshub.app/routes/blog",
+        "source": [
+          "/blog/posts"
+        ],
+        "target": "/kadokawa/blog"
       }
     ]
   },
@@ -9701,7 +10001,7 @@
     ]
   },
   "mangadex.org": {
-    "_name": "Unknown",
+    "_name": "MangaDex",
     ".": [
       {
         "title": "Unknown",
@@ -9740,6 +10040,49 @@
           "/user/book/shelf"
         ],
         "target": "/manhuagui/subscribe"
+      }
+    ]
+  },
+  "manyvids.com": {
+    "_name": "ManyVids",
+    "www": [
+      {
+        "title": "Creator Videos",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/Profile/:uid/:handle/Store/*",
+          "/Profile/:uid/:handle/Store"
+        ],
+        "target": "/manyvids/profile/vids/:uid"
+      }
+    ]
+  },
+  "matters.town": {
+    "_name": "Matters",
+    ".": [
+      {
+        "title": "Author",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/:uid"
+        ],
+        "target": "/mattersparams=>`/matters/author/${params.uid.slice(1)}`"
+      },
+      {
+        "title": "Latest, heat, essence",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/"
+        ],
+        "target": "/matters/latest/:type?"
+      },
+      {
+        "title": "Tags",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/tags/:tid"
+        ],
+        "target": "/matters/tags/:tid"
       }
     ]
   },
@@ -10049,6 +10392,19 @@
           "/"
         ],
         "target": "/mvm/:category?"
+      }
+    ]
+  },
+  "my-formosa.com": {
+    "_name": "美麗島電子報",
+    ".": [
+      {
+        "title": "首页",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/"
+        ],
+        "target": "/my-formosa/"
       }
     ]
   },
@@ -10873,6 +11229,30 @@
         ],
         "target": "/nikkei/asia"
       }
+    ],
+    "cn": [
+      {
+        "title": "中文版新闻",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/:category/:type",
+          "/:category",
+          "/"
+        ],
+        "target": "/nikkeiparams=>{if(params.category&&params.type){return`/nikkei/cn/cn/${params.category}/${params.type.replace(\".html\",\"\")}`}else if(params.category&&!params.type){return`/nikkei/cn/cn/${params.category.replace(\".html\",\"\")}`}else{return`/nikkei/cn/cn`}}"
+      }
+    ],
+    "zh.cn": [
+      {
+        "title": "中文版新聞",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/:category/:type",
+          "/:category",
+          "/"
+        ],
+        "target": "/nikkeiparams=>{if(params.category&&params.type){return`/nikkei/cn/zh/${params.category}/${params.type.replace(\".html\",\"\")}`}else if(params.category&&!params.type){return`/nikkei/cn/zh/${params.category.replace(\".html\",\"\")}`}else{return`/nikkei/cn/zh`}}"
+      }
     ]
   },
   "nintendo.com": {
@@ -11335,6 +11715,19 @@
           "/"
         ],
         "target": "/nowcoder/schedule"
+      }
+    ]
+  },
+  "npmjs.com": {
+    "_name": "NPM",
+    "www": [
+      {
+        "title": "Package",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/package/:name"
+        ],
+        "target": "/npm/package/:name{(@[a-z0-9-~][a-z0-9-._~]*/)?[a-z0-9-~][a-z0-9-._~]*}"
       }
     ]
   },
@@ -12350,6 +12743,28 @@
       }
     ]
   },
+  "podwise.ai": {
+    "_name": "Podwise",
+    ".": [
+      {
+        "title": "Collections",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/",
+          "/explore"
+        ],
+        "target": "/podwise/explore"
+      },
+      {
+        "title": "Episodes",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/explore/:type"
+        ],
+        "target": "/podwise/explore/:type"
+      }
+    ]
+  },
   "pornhub.com": {
     "_name": "PornHub",
     ".": [
@@ -12442,6 +12857,27 @@
           "/en-sg/ps-plus/whats-new"
         ],
         "target": "/ps/monthly-games"
+      }
+    ]
+  },
+  "psyche.co": {
+    "_name": "Psyche",
+    ".": [
+      {
+        "title": "Topics",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/:topic"
+        ],
+        "target": "/psyche/topic/:topic"
+      },
+      {
+        "title": "Types",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/:type"
+        ],
+        "target": "/psyche/type/:type"
       }
     ]
   },
@@ -12781,7 +13217,7 @@
       },
       {
         "title": "Unknown",
-        "docs": "https://docs.rsshub.app/routes/new-media",
+        "docs": "https://docs.rsshub.app/routes/programming",
         "source": [
           "/zt2020/page/feiyan.htm"
         ],
@@ -13059,7 +13495,17 @@
     ]
   },
   "ruc.edu.cn": {
-    "_name": "中国人民大学",
+    "_name": "Renmin University of China",
+    "ai": [
+      {
+        "title": "高瓴人工智能学院",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/"
+        ],
+        "target": "/ruc/ai/:category?"
+      }
+    ],
     "hr": [
       {
         "title": "人事处",
@@ -14790,6 +15236,14 @@
         "target": "/sspai/matrix"
       },
       {
+        "title": "会员社区",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/community"
+        ],
+        "target": "/sspai/prime/community"
+      },
+      {
         "title": "付费专栏文章更新",
         "docs": "https://docs.rsshub.app/routes/new-media",
         "source": [
@@ -14916,6 +15370,14 @@
           "/app/:appid"
         ],
         "target": "/steam/appcommunityfeed/:appid"
+      },
+      {
+        "title": "Workshop Search Results",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/app/:appid/workshop/"
+        ],
+        "target": "/steam/workshopsearch/:appid"
       }
     ]
   },
@@ -14986,6 +15448,19 @@
           "/"
         ],
         "target": "/storyfm/index"
+      }
+    ]
+  },
+  "stream-capital.com": {
+    "_name": "远川研究所",
+    "www": [
+      {
+        "title": "最新",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/search"
+        ],
+        "target": "/stream-capital/search"
       }
     ]
   },
@@ -15445,6 +15920,19 @@
           "/s/:username"
         ],
         "target": "/telegram/channel/:username"
+      }
+    ]
+  },
+  "tencent.com": {
+    "_name": "腾讯",
+    "cloud": [
+      {
+        "title": "腾讯云开发者社区专栏",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/developer/column"
+        ],
+        "target": "/tencent/cloud/developer/column/:categoryId?"
       }
     ]
   },
@@ -16703,6 +17191,19 @@
       }
     ]
   },
+  "vice.com": {
+    "_name": "VICE",
+    "www": [
+      {
+        "title": "Topic",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/:language/topic/:topic"
+        ],
+        "target": "/vice/topic/:topic/:language"
+      }
+    ]
+  },
   "vimeo.com": {
     "_name": "Vimeo",
     ".": [
@@ -16949,6 +17450,14 @@
           "/p/:id/super_index"
         ],
         "target": "/weibo/super_index/:id"
+      },
+      {
+        "title": "用户收藏动态",
+        "docs": "https://docs.rsshub.app/routes/social-media",
+        "source": [
+          "/"
+        ],
+        "target": "/weibo/user_bookmarks/:uid"
       }
     ],
     "s": [
@@ -16970,7 +17479,8 @@
         "docs": "https://docs.rsshub.app/routes/social-media",
         "source": [
           "/u/:uid",
-          "/profile/:uid"
+          "/profile/:uid",
+          "/u/:uid"
         ],
         "target": "/weibo/user/:uid"
       },
@@ -17134,6 +17644,19 @@
           "/apps/:appId"
         ],
         "target": "/winstall/:appId"
+      }
+    ]
+  },
+  "wired.com": {
+    "_name": "WIRED",
+    "www": [
+      {
+        "title": "Tags",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/tag/:tag/"
+        ],
+        "target": "/wired/tag/:tag"
       }
     ]
   },
@@ -17977,7 +18500,8 @@
         "title": "用户文章",
         "docs": "https://docs.rsshub.app/routes/social-media",
         "source": [
-          "/:usertype/:id/posts"
+          "/:usertype/:id/posts",
+          "/:usertype/:id"
         ],
         "target": "/zhihu/posts/:usertype/:id"
       },
