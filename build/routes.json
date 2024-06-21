@@ -8162,6 +8162,30 @@
   },
   "bjx": {
     "routes": {
+      "/fd/:type": {
+        "path": "/fd/:type",
+        "categories": [
+          "traditional-media"
+        ],
+        "example": "/bjx/fd/yw",
+        "parameters": {
+          "type": "文章分类"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "风电",
+        "maintainers": [
+          "hualiong"
+        ],
+        "description": "`:type` 类型可选如下\n\n  | 要闻 | 政策 | 数据 | 市场 | 企业 | 招标 | 技术 | 报道 |\n| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |\n| yw   | zc   | sj   | sc   | mq   | zb   | js   | bd   |",
+        "location": "fd.ts"
+      },
       "/huanbao": {
         "path": "/huanbao",
         "categories": [
@@ -8218,7 +8242,7 @@
       }
     },
     "name": "北极星电力网",
-    "url": "guangfu.bjx.com.cn"
+    "url": "www.bjx.com.cn"
   },
   "blizzard": {
     "routes": {
@@ -9834,6 +9858,90 @@
     },
     "name": "参考消息",
     "url": "cankaoxiaoxi.com"
+  },
+  "cara": {
+    "routes": {
+      "/likes/:user": {
+        "path": [
+          "/likes/:user"
+        ],
+        "categories": [
+          "social-media"
+        ],
+        "example": "/cara/likes/fengz",
+        "parameters": {
+          "user": "username"
+        },
+        "name": "Likes",
+        "maintainers": [
+          "KarasuShin"
+        ],
+        "radar": [
+          {
+            "source": [
+              "cara.app/:user",
+              "cara.app/:user/*"
+            ],
+            "target": "/likes/:user"
+          }
+        ],
+        "location": "likes.ts"
+      },
+      "/portfolio/:user": {
+        "path": [
+          "/portfolio/:user"
+        ],
+        "categories": [
+          "social-media"
+        ],
+        "example": "/cara/portfolio/fengz",
+        "parameters": {
+          "user": "username"
+        },
+        "name": "Portfolio",
+        "maintainers": [
+          "KarasuShin"
+        ],
+        "radar": [
+          {
+            "source": [
+              "cara.app/:user",
+              "cara.app/:user/*"
+            ],
+            "target": "/portfolio/:user"
+          }
+        ],
+        "location": "portfolio.ts"
+      },
+      "/timeline/:user": {
+        "path": [
+          "/timeline/:user"
+        ],
+        "categories": [
+          "social-media"
+        ],
+        "example": "/cara/timeline/fengz",
+        "parameters": {
+          "user": "username"
+        },
+        "name": "Timeline",
+        "maintainers": [
+          "KarasuShin"
+        ],
+        "radar": [
+          {
+            "source": [
+              "cara.app/:user",
+              "cara.app/:user/*"
+            ],
+            "target": "/timeline/:user"
+          }
+        ],
+        "location": "timeline.ts"
+      }
+    },
+    "name": "Cara",
+    "url": "cara.app"
   },
   "cartoonmad": {
     "routes": {
@@ -14903,6 +15011,36 @@
     "name": "大麦网",
     "url": "search.damai.cn"
   },
+  "dangdang": {
+    "routes": {
+      "/notice/:type?": {
+        "path": "/notice/:type?",
+        "categories": [
+          "programming"
+        ],
+        "example": "/dangdang/notice/1",
+        "parameters": {
+          "type": "公告分类，默认为全部"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "公告",
+        "maintainers": [
+          "353325487"
+        ],
+        "description": "| 类型     | type |\n  | -------- | ---- |\n  | 全部      | 0    |\n  | 其他      | 1    |\n  | 规则变更   | 2    |",
+        "location": "notice.ts"
+      }
+    },
+    "name": "当当开放平台",
+    "url": "open.dangdang.com"
+  },
   "dapenti": {
     "routes": {
       "/subject/:id": {
@@ -15636,6 +15774,36 @@
     },
     "name": "DevolverDigital",
     "url": "devolverdigital.com"
+  },
+  "dewu": {
+    "routes": {
+      "/declaration/:categoryId?": {
+        "path": "/declaration/:categoryId?",
+        "categories": [
+          "programming"
+        ],
+        "example": "/dewu/declaration/1010580020",
+        "parameters": {
+          "categoryId": "公告分类, 可在页面URL获取 默认为1010580020"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "平台公告",
+        "maintainers": [
+          "blade0910"
+        ],
+        "description": "| 类型             | type       |\n  | ---------------- | ---------- |\n  | 技术变更         | 1010580020 |\n  | 服务市场规则中心 | 1014821004 |\n  | 规则变更         | 1011202692 |\n  | 维护公告         | 1010568195 |",
+        "location": "declaration.ts"
+      }
+    },
+    "name": "得物",
+    "url": "dewu.com"
   },
   "dgjyw": {
     "routes": {
@@ -30838,6 +31006,49 @@
     "name": "InfoQ 中文",
     "url": "infoq.cn"
   },
+  "informedainews": {
+    "routes": {
+      "/zh-Hans/docs/:type": {
+        "path": "/zh-Hans/docs/:type",
+        "categories": [
+          "new-media"
+        ],
+        "example": "/informedainews/zh-Hans/docs/world-news-daily",
+        "parameters": {
+          "type": "world-news-daily|tech-enthusiast-weekly|ai-enthusiast-daily"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "informedainews.com",
+              "informedainews.com/zh-Hans/docs/:type",
+              "informedainews.com/docs/:type"
+            ],
+            "target": "/zh-Hans/docs/:type"
+          }
+        ],
+        "name": "知闻AI",
+        "maintainers": [
+          "guicaiyue"
+        ],
+        "location": "docs.ts"
+      }
+    },
+    "name": "Informed AI News",
+    "url": "informedainews.com",
+    "description": "\n:::tip\ninformed AI RSS feeds:\n\n-   World News Daily: 'https://rsshub.app/informedainews/zh-Hans/docs/world-news-daily'\n-   Tech Enthusiast Weekly: 'https://rsshub.app/informedainews/zh-Hans/docs/tech-enthusiast-weekly'\n-   AI Enthusiast Weekly: 'https://rsshub.app/informedainews/zh-Hans/docs/ai-enthusiast-daily'\n:::",
+    "zh": {
+      "name": "知闻AI"
+    }
+  },
   "informs": {
     "routes": {
       "/:category?": {
@@ -32641,6 +32852,36 @@
     },
     "name": "精真估",
     "url": "www.jingzhengu.com"
+  },
+  "jinritemai": {
+    "routes": {
+      "/docs/:dirId?": {
+        "path": "/docs/:dirId?",
+        "categories": [
+          "programming"
+        ],
+        "example": "/jinritemai/docs/19",
+        "parameters": {
+          "dirId": "公告分类, 可在页面URL获取 默认为全部"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "平台公告",
+        "maintainers": [
+          "blade0910"
+        ],
+        "description": "| 类型    | type    |\n  | --------- | ---------- |\n  | 全部公告    | 5    |\n  | 产品发布    | 19   |\n  | 规则变更    | 21   |\n  | 维护公告    | 20   |\n  | 其他公告    | 22   |",
+        "location": "docs.ts"
+      }
+    },
+    "name": "抖店开放平台",
+    "url": "op.jinritemai.com"
   },
   "jinse": {
     "routes": {
@@ -52370,6 +52611,63 @@
         "description": "| 通知公告 | 学院动态 | 教学管理 | 动科大讲堂 | 就业信息 |\n  | -------- | -------- | -------- | ---------- | -------- |\n  | tzgg     | xydt     | jxgl     | dkdjt      | zpxx     |",
         "location": "dky.ts"
       },
+      "/jiaowu/jxtz": {
+        "path": "/jiaowu/jxtz",
+        "categories": [
+          "university"
+        ],
+        "example": "/sicau/jiaowu/jxtz",
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "jiaowu.sicau.edu.cn/web/web/web/index.asp"
+            ],
+            "target": "/jiaowu/jxtz"
+          }
+        ],
+        "name": "教务处",
+        "maintainers": [
+          "hualiong"
+        ],
+        "url": "jiaowu.sicau.edu.cn/",
+        "location": "jiaowu.ts"
+      },
+      "/jk/:gid/:typeId/:sortType/:token": {
+        "path": "/jk/:gid/:typeId/:sortType/:token",
+        "categories": [
+          "university"
+        ],
+        "example": "/sicau/jk/0/0/2/8d95466cf63e537292b303cb92b5958c",
+        "parameters": {
+          "gid": "活动所属组织ID，见下表",
+          "typeId": "活动类别ID，见下表",
+          "sortType": "排序方式，见下表",
+          "token": "访问令牌，可通过示例中的令牌直接访问（会过期）"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "二课活动",
+        "maintainers": [
+          "hualiong"
+        ],
+        "url": "jk.sicau.edu.cn",
+        "description": "\n\n:::tip\n**本校学生**可以直接 POST `https://jk.sicau.edu.cn/user/login/v1.0.0/snoLogin` 从返回结果中的 `token` 字段拿到个人令牌，记得在url后添加以下**查询参数**：\n\n-   sid: `f1c97a0e81c24e98adb1ebdadca0699b`\n-   loginName: `你的学号`\n-   password: `你的i川农密码`\n\n:::\n\n:::warning\n由于i川农后台有请求限制，为避免一次性大量请求而被限流，每次只请求结果的第一页数据，即前20条\n:::\n\n**活动所属组织ID：**\n\n| ID   | 组织                 | ID   | 组织               | ID   | 组织                   | ID   | 组织                   |\n| ---- | -------------------- | ---- | ------------------ | ---- | ---------------------- | ---- | ---------------------- |\n| 0    | 全部组织             | 14   | 校纪委             | 28   | 食品学院               | 42   | 经济学院               |\n| 1    | 管理学院             | 15   | 生命科学学院       | 29   | 环境学院               | 43   | 机电学院               |\n| 2    | 学生心理健康服务中心 | 16   | 水利水电学院       | 30   | 国家重点实验室         | 44   | 都江堰校区综合办后管科 |\n| 3    | 档案馆               | 17   | 国合处             | 31   | 党委统战部             | 45   | 园艺学院               |\n| 4    | 马克思主义学院       | 18   | 商旅学院           | 32   | 草业科技学院           | 46   | 资源学院               |\n| 5    | 都江堰校区党政办     | 19   | 风景园林学院       | 33   | 商学院                 | 47   | 学生处                 |\n| 6    | 土木工程学院         | 20   | 建筑与城乡规划学院 | 34   | 党委组织部             | 48   | 农学院                 |\n| 7    | 林学院               | 21   | 体育学院           | 35   | 校团委                 | 49   | 公共管理学院           |\n| 8    | 动物医学院           | 22   | 校体委             | 36   | 法学院                 | 50   | 图书馆                 |\n| 9    | 保卫处               | 23   | 校区团委           | 37   | 水稻研究所             | 51   | 校学生会               |\n| 10   | 理学院               | 24   | 后勤管理处         | 38   | 研究生院               | 52   | 动物科技学院           |\n| 11   | 艺术与传媒学院       | 25   | 教务处             | 39   | 后勤服务总公司         | 53   | 信息工程学院           |\n| 12   | 大学生艺术团         | 26   | 人文学院           | 40   | 招生就业处             |      |                        |\n| 13   | 都江堰校区基础教学部 | 27   | 党委宣传部         | 41   | 学生社团管理与服务中心 |      |                        |\n\n**活动类别ID：**\n\n| ID   | 组织             | ID   | 组织                 | ID   | 组织           |\n| ---- | ---------------- | ---- | -------------------- | ---- | -------------- |\n| 0    | 所有类别         | 5    | 校本文化（校规校纪） | 10   | 体质测试       |\n| 1    | 党团学习         | 6    | 德育—社会实践        | 11   | 文化艺术活动   |\n| 2    | 学生干部社会工作 | 7    | 创新创业类           | 12   | 文艺演出或讲座 |\n| 3    | 校院班任务       | 8    | 科技学术讲座         | 13   | 劳动教育       |\n| 4    | 德育（志愿公益） | 9    | 体育活动（新）       |      |                |\n\n**排序方式：**\n\n| 即将开始 | 最新活动 | 可参与 |\n| -------  | -------- | -------- |\n| 1     | 2     | 4     |\n",
+        "location": "jk.ts"
+      },
       "/yan/:category?": {
         "path": "/yan/:category?",
         "categories": [
@@ -52436,7 +52734,7 @@
       }
     },
     "name": "四川农业大学",
-    "url": "dky.sicau.edu.cn"
+    "url": "www.sicau.edu.cn"
   },
   "sigsac": {
     "routes": {
@@ -54750,6 +55048,32 @@
           "moppman"
         ],
         "location": "search.ts"
+      },
+      "/sharefile-changelog/:sharefileID/:routeParams?": {
+        "path": "/sharefile-changelog/:sharefileID/:routeParams?",
+        "categories": [
+          "game"
+        ],
+        "example": "/steam/sharefile-changelog/2851063440/l=schinese",
+        "parameters": {
+          "sharefileID": "Steam community sharefile id. Usually refers to a workshop item.",
+          "routeParams": "Route parameters."
+        },
+        "radar": [
+          {
+            "title": "Sharefile Changelog",
+            "source": [
+              "steamcommunity.com/sharedfiles/filedetails/changelog/:sharefileID"
+            ],
+            "target": "/sharefile-changelog/:sharefileID"
+          }
+        ],
+        "description": "Steam Community Sharefile's Changelog. Primary used for a workshop item.\nHelpful route parameters:\n- `l=` language parameter, change the language of description.\n- `p=` page parameter, change the results page. p=1 by default.\n",
+        "name": "Sharefile Changelog",
+        "maintainers": [
+          "NyaaaDoge"
+        ],
+        "location": "sharefile-changelog.ts"
       },
       "/workshopsearch/:appid?/:routeParams?": {
         "path": "/workshopsearch/:appid?/:routeParams?",

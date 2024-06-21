@@ -800,6 +800,9 @@
   "/bjwxdxh/:type?": [
     "Misaka13514"
   ],
+  "/bjx/fd/:type": [
+    "hualiong"
+  ],
   "/bjx/huanbao": [
     "zsimple"
   ],
@@ -955,6 +958,15 @@
   "/cankaoxiaoxi/:id?": [
     "yuxinliu-alex",
     "nczitzk"
+  ],
+  "/cara/likes/:user": [
+    "KarasuShin"
+  ],
+  "/cara/portfolio/:user": [
+    "KarasuShin"
+  ],
+  "/cara/timeline/:user": [
+    "KarasuShin"
   ],
   "/cartoonmad/comic/:id": [
     "KellyHwong"
@@ -1431,6 +1443,9 @@
   "/damai/activity/:city/:category/:subcategory/:keyword?": [
     "hoilc"
   ],
+  "/dangdang/notice/:type?": [
+    "353325487"
+  ],
   "/dapenti/subject/:id": [
     "xyqfer"
   ],
@@ -1502,6 +1517,9 @@
   ],
   "/devolverdigital/blog": [
     "XXY233"
+  ],
+  "/dewu/declaration/:categoryId?": [
+    "blade0910"
   ],
   "/dgjyw*": [],
   "/dhu/jiaowu/news/:type?": [
@@ -3057,6 +3075,9 @@
   "/infoq/topic/:id": [
     "brilon"
   ],
+  "/informedainews/zh-Hans/docs/:type": [
+    "guicaiyue"
+  ],
   "/informs/:category?": [
     "Fatpandac"
   ],
@@ -3246,6 +3267,9 @@
   ],
   "/jingzhengu/news": [
     "TonyRL"
+  ],
+  "/jinritemai/docs/:dirId?": [
+    "blade0910"
   ],
   "/jinse/:category?": [
     "nczitzk"
@@ -5195,6 +5219,12 @@
   "/sicau/dky/:category?": [
     "nczitzk"
   ],
+  "/sicau/jiaowu/jxtz": [
+    "hualiong"
+  ],
+  "/sicau/jk/:gid/:typeId/:sortType/:token": [
+    "hualiong"
+  ],
   "/sicau/yan/:category?": [
     "nczitzk"
   ],
@@ -5423,6 +5453,9 @@
   ],
   "/steam/search/:params": [
     "moppman"
+  ],
+  "/steam/sharefile-changelog/:sharefileID/:routeParams?": [
+    "NyaaaDoge"
   ],
   "/steam/workshopsearch/:appid?/:routeParams?": [
     "NyaaaDoge"
