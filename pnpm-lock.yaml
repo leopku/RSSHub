@@ -45,8 +45,8 @@ importers:
         specifier: 0.0.15
         version: 0.0.15
       '@scalar/hono-api-reference':
-        specifier: 0.5.144
-        version: 0.5.144(hono@4.5.11)
+        specifier: 0.5.147
+        version: 0.5.147(hono@4.5.11)
       '@sentry/node':
         specifier: 7.116.0
         version: 7.116.0
@@ -1754,22 +1754,22 @@ packages:
   '@rss3/sdk@0.0.15':
     resolution: {integrity: sha512-refr0jRJ422G0kO3vU+S3D/6rXTVDAG/thiZYtg68FVuJc7OMmmiPrrRKf/8X/gOTa3BWsUNpyHRnEFNdJa09w==}
 
-  '@scalar/hono-api-reference@0.5.144':
-    resolution: {integrity: sha512-ZeboJSlH8ZvdUjVGOZ1XEXKCvyls/s2MS+3Qif8EuTPGi6BG7hjYlcIk74perMc+zZfJl0b61aeaHlqqQ+El+A==}
+  '@scalar/hono-api-reference@0.5.147':
+    resolution: {integrity: sha512-s8qLiC82joMYQ3ONsHTZM/gPSUoDc/Sl3inOlYHNiO/Cgo8lFvIyjGKqJAWwUxNwYRheU7YLBR0VSkvfRjS4KA==}
     engines: {node: '>=18'}
     peerDependencies:
       hono: ^4.0.0
 
-  '@scalar/openapi-types@0.1.0':
-    resolution: {integrity: sha512-UxyIkRqC2rbvQJhenA+KdgAbLNUPjqI5CHhZmTuxiv7De9ZJLRVTQCa0JxNqSJ/b51VKpqZ/pDLvjbQpxGFWcA==}
+  '@scalar/openapi-types@0.1.1':
+    resolution: {integrity: sha512-NMy3QNk6ytcCoPUGJH0t4NNr36OWXgZhA3ormr3TvhX1NDgoF95wFyodGVH8xiHeUyn2/FxtETm8UBLbB5xEmg==}
     engines: {node: '>=18'}
 
-  '@scalar/themes@0.9.28':
-    resolution: {integrity: sha512-2pFGnjSBL2daPA5roRNRDy8xAHpeTI5QYpfyTj88iIaYT68EVnDUheUA2i3vRB705FCGEbDR0xKD7poTSfAYng==}
+  '@scalar/themes@0.9.30':
+    resolution: {integrity: sha512-ndFfdHIbv9Q4ziEaK+SHG6Pb+yHfqJOLoGiv+6ziwVVgWD1qUHeNWdSigVj4WTH48TdogF9igb9aFgHtKXz95Q==}
     engines: {node: '>=18'}
 
-  '@scalar/types@0.0.6':
-    resolution: {integrity: sha512-MeL08EQO+lA8rJwS8Efch7KYs15G3Bm4XtNmJPRS1Ae85exWXkVS73TDlIyNBfk4eV+COs3tbBBLaUHpxUlRbQ==}
+  '@scalar/types@0.0.9':
+    resolution: {integrity: sha512-Jo1vjCRMrP627UVpfwxdahAHycB2vSQ6dXt4ideXOIjeg6ABuqAu4S8SxrKo/V00dGv6rjplSNJQ8MhfheKrJQ==}
     engines: {node: '>=18'}
 
   '@sec-ant/readable-stream@0.4.1':
@@ -2746,8 +2746,8 @@ packages:
   dezalgo@1.0.4:
     resolution: {integrity: sha512-rXSP0bf+5n0Qonsb+SVVfNfIsimO4HEtmnIpPHY8Q1UCzKlQrDMfdobr8nJOOsRgWCyMRqeSBQzmWUMq7zvVig==}
 
-  difflib@https://codeload.github.com/postlight/difflib.js/tar.gz/32e8e38c7fcd935241b9baab71bb432fd9b166ed:
-    resolution: {tarball: https://codeload.github.com/postlight/difflib.js/tar.gz/32e8e38c7fcd935241b9baab71bb432fd9b166ed}
+  difflib@git+https://git@github.com:postlight/difflib.js.git#32e8e38c7fcd935241b9baab71bb432fd9b166ed:
+    resolution: {commit: 32e8e38c7fcd935241b9baab71bb432fd9b166ed, repo: git@github.com:postlight/difflib.js.git, type: git}
     version: 0.2.6
 
   directory-import@3.3.1:
@@ -7163,7 +7163,7 @@ snapshots:
       '@babel/runtime-corejs2': 7.25.6
       '@postlight/ci-failed-test-reporter': 1.0.26
       cheerio: 0.22.0
-      difflib: https://codeload.github.com/postlight/difflib.js/tar.gz/32e8e38c7fcd935241b9baab71bb432fd9b166ed
+      difflib: git+https://git@github.com:postlight/difflib.js.git#32e8e38c7fcd935241b9baab71bb432fd9b166ed
       ellipsize: 0.1.0
       iconv-lite: 0.5.0
       moment: 2.30.1
@@ -7298,19 +7298,19 @@ snapshots:
       '@rss3/api-core': 0.0.15
       '@rss3/api-utils': 0.0.15
 
-  '@scalar/hono-api-reference@0.5.144(hono@4.5.11)':
+  '@scalar/hono-api-reference@0.5.147(hono@4.5.11)':
     dependencies:
-      '@scalar/types': 0.0.6
+      '@scalar/types': 0.0.9
       hono: 4.5.11
 
-  '@scalar/openapi-types@0.1.0': {}
+  '@scalar/openapi-types@0.1.1': {}
 
-  '@scalar/themes@0.9.28': {}
+  '@scalar/themes@0.9.30': {}
 
-  '@scalar/types@0.0.6':
+  '@scalar/types@0.0.9':
     dependencies:
-      '@scalar/openapi-types': 0.1.0
-      '@scalar/themes': 0.9.28
+      '@scalar/openapi-types': 0.1.1
+      '@scalar/themes': 0.9.30
       '@unhead/schema': 1.10.4
 
   '@sec-ant/readable-stream@0.4.1': {}
@@ -8367,7 +8367,7 @@ snapshots:
       asap: 2.0.6
       wrappy: 1.0.2
 
-  difflib@https://codeload.github.com/postlight/difflib.js/tar.gz/32e8e38c7fcd935241b9baab71bb432fd9b166ed:
+  difflib@git+https://git@github.com:postlight/difflib.js.git#32e8e38c7fcd935241b9baab71bb432fd9b166ed:
     dependencies:
       heap: 0.2.7
 
