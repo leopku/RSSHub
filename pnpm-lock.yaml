@@ -388,8 +388,8 @@ importers:
         specifier: 15.9.0
         version: 15.9.0
       got:
-        specifier: 14.4.2
-        version: 14.4.2
+        specifier: 14.4.3
+        version: 14.4.3
       husky:
         specifier: 9.1.5
         version: 9.1.5
@@ -1806,8 +1806,8 @@ packages:
     resolution: {integrity: sha512-TV7t8GKYaJWsn00tFDqBw8+Uqmr8A0fRU1tvTQhyZzGv0sJCGRQL3JGMI3ucuKo3XIZdUP+Lx7/gh2t3lewy7g==}
     engines: {node: '>=14.16'}
 
-  '@sindresorhus/is@7.0.0':
-    resolution: {integrity: sha512-WDTlVTyvFivSOuyvMeedzg2hdoBLZ3f1uNVuEida2Rl9BrfjrIRjWA/VZIrMRLvSwJYCAlCRA3usDt1THytxWQ==}
+  '@sindresorhus/is@7.0.1':
+    resolution: {integrity: sha512-QWLl2P+rsCJeofkDNIT3WFmb6NrRud1SUYW8dIhXK/46XFV8Q/g7Bsvib0Askb0reRLe+WYPeeE+l5cH7SlkuQ==}
     engines: {node: '>=18'}
 
   '@stylistic/eslint-plugin@2.7.2':
@@ -2746,8 +2746,8 @@ packages:
   dezalgo@1.0.4:
     resolution: {integrity: sha512-rXSP0bf+5n0Qonsb+SVVfNfIsimO4HEtmnIpPHY8Q1UCzKlQrDMfdobr8nJOOsRgWCyMRqeSBQzmWUMq7zvVig==}
 
-  difflib@https://codeload.github.com/postlight/difflib.js/tar.gz/32e8e38c7fcd935241b9baab71bb432fd9b166ed:
-    resolution: {tarball: https://codeload.github.com/postlight/difflib.js/tar.gz/32e8e38c7fcd935241b9baab71bb432fd9b166ed}
+  difflib@git+https://git@github.com:postlight/difflib.js.git#32e8e38c7fcd935241b9baab71bb432fd9b166ed:
+    resolution: {commit: 32e8e38c7fcd935241b9baab71bb432fd9b166ed, repo: git@github.com:postlight/difflib.js.git, type: git}
     version: 0.2.6
 
   directory-import@3.3.1:
@@ -3027,6 +3027,7 @@ packages:
   eslint@8.57.0:
     resolution: {integrity: sha512-dZ6+mexnaTIbSBZWgou51U6OmzIhYM2VcNdtiTtI7qPNZm35Akpr0f6vtw3w1Kmn5PYo+tZVfh13WrhpS6oLqQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
 
   eslint@9.9.1:
@@ -3396,8 +3397,8 @@ packages:
     resolution: {integrity: sha512-mThBblvlAF1d4O5oqyvN+ZxLAYwIJK7bpMxgYqPD9okW0C3qm5FFn7k811QrcuEBwaogR3ngOFoCfs6mRv7teQ==}
     engines: {node: '>=14.16'}
 
-  got@14.4.2:
-    resolution: {integrity: sha512-+Te/qEZ6hr7i+f0FNgXx/6WQteSM/QqueGvxeYQQFm0GDfoxLVJ/oiwUKYMTeioColWUTdewZ06hmrBjw6F7tw==}
+  got@14.4.3:
+    resolution: {integrity: sha512-iTC0Z87yxSijWTh/IpvGpwOhIQK7+GgWkYrMRoN/hB9qeRj9RPuLGODwevs0p5idUf7nrxCVa5IlOmK3b8z+KA==}
     engines: {node: '>=20'}
 
   graceful-fs@4.2.11:
@@ -3787,8 +3788,8 @@ packages:
   jsbn@1.1.0:
     resolution: {integrity: sha512-4bYVV3aAMtDTTu4+xsDYa6sy9GyJ69/amsu9sYF2zqjiEoZA5xJi3BrfX3uY+/IekIu7MwdObdbDWpoZdBv3/A==}
 
-  jschardet@3.1.3:
-    resolution: {integrity: sha512-Q1PKVMK/uu+yjdlobgWIYkUOCR1SqUmW9m/eUJNNj4zI2N12i25v8fYpVf+zCakQeaTdBdhnZTFbVIAVZIVVOg==}
+  jschardet@3.1.4:
+    resolution: {integrity: sha512-/kmVISmrwVwtyYU40iQUOp3SUPk2dhNCMsZBQX0R1/jZ8maaXJ/oZIzUOiyOqcgtLnETFKYChbJ5iDC/eWmFHg==}
     engines: {node: '>=0.1.90'}
 
   jsdom@25.0.0:
@@ -5464,6 +5465,10 @@ packages:
     resolution: {integrity: sha512-OduNjVJsFbifKb57UqZ2EMP1i4u64Xwow3NYXUtBbD4vIwJdQd4+xl8YDou1dlm4DVrtwT/7Ky8z8WyCULVfxw==}
     engines: {node: '>=16'}
 
+  type-fest@4.26.1:
+    resolution: {integrity: sha512-yOGpmOAL7CkKe/91I5O3gPICmJNLJ1G4zFYVAsRHg7M64biSnPtRj0WNQt++bRkjYOqjWXrhnUw1utzmVErAdg==}
+    engines: {node: '>=16'}
+
   type@2.7.3:
     resolution: {integrity: sha512-8j+1QmAbPvLZow5Qpi6NCaN8FB60p/6x8/vfNqOk/hC+HuvFZhL4+WfekuhQLiqFZXOgQdrs3B+XxEmCc6b3FQ==}
 
@@ -7004,7 +7009,7 @@ snapshots:
   '@microsoft/eslint-formatter-sarif@3.1.0':
     dependencies:
       eslint: 8.57.0
-      jschardet: 3.1.3
+      jschardet: 3.1.4
       lodash: 4.17.21
       utf8: 3.0.0
     transitivePeerDependencies:
@@ -7163,7 +7168,7 @@ snapshots:
       '@babel/runtime-corejs2': 7.25.6
       '@postlight/ci-failed-test-reporter': 1.0.26
       cheerio: 0.22.0
-      difflib: https://codeload.github.com/postlight/difflib.js/tar.gz/32e8e38c7fcd935241b9baab71bb432fd9b166ed
+      difflib: git+https://git@github.com:postlight/difflib.js.git#32e8e38c7fcd935241b9baab71bb432fd9b166ed
       ellipsize: 0.1.0
       iconv-lite: 0.5.0
       moment: 2.30.1
@@ -7354,7 +7359,7 @@ snapshots:
 
   '@sindresorhus/is@5.6.0': {}
 
-  '@sindresorhus/is@7.0.0': {}
+  '@sindresorhus/is@7.0.1': {}
 
   '@stylistic/eslint-plugin@2.7.2(eslint@9.9.1)(typescript@5.5.4)':
     dependencies:
@@ -8367,7 +8372,7 @@ snapshots:
       asap: 2.0.6
       wrappy: 1.0.2
 
-  difflib@https://codeload.github.com/postlight/difflib.js/tar.gz/32e8e38c7fcd935241b9baab71bb432fd9b166ed:
+  difflib@git+https://git@github.com:postlight/difflib.js.git#32e8e38c7fcd935241b9baab71bb432fd9b166ed:
     dependencies:
       heap: 0.2.7
 
@@ -9221,9 +9226,9 @@ snapshots:
       p-cancelable: 3.0.0
       responselike: 3.0.0
 
-  got@14.4.2:
+  got@14.4.3:
     dependencies:
-      '@sindresorhus/is': 7.0.0
+      '@sindresorhus/is': 7.0.1
       '@szmarczak/http-timer': 5.0.1
       cacheable-lookup: 7.0.0
       cacheable-request: 12.0.1
@@ -9233,7 +9238,7 @@ snapshots:
       lowercase-keys: 3.0.0
       p-cancelable: 4.0.1
       responselike: 3.0.0
-      type-fest: 4.26.0
+      type-fest: 4.26.1
 
   graceful-fs@4.2.11: {}
 
@@ -9635,7 +9640,7 @@ snapshots:
 
   jsbn@1.1.0: {}
 
-  jschardet@3.1.3: {}
+  jschardet@3.1.4: {}
 
   jsdom@25.0.0(bufferutil@4.0.8)(utf-8-validate@5.0.10):
     dependencies:
@@ -11445,6 +11450,8 @@ snapshots:
   type-fest@1.4.0: {}
 
   type-fest@4.26.0: {}
+
+  type-fest@4.26.1: {}
 
   type@2.7.3: {}
 
